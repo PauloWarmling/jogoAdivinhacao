@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-bg-body: linear-gradient(288deg, #C2E9FB 0%, #A1C4FD 100%);
+    --color-bg-main: #FFFFFF;
+    --color-bg-button: #7879F1;
+    --color-bg-number: #DCE2E9;
+    --color-h1: #34355B;
+    --color-p: rgba(52, 53, 91, 0.80);
+}
+
+.screen1,
+.screen2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    background: var(--color-bg-button);
+    padding: 1.6rem;
+
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+
+    color: var(--color-bg-main);
+    font-weight: 700;
+
+    transition: background .3s;
+    cursor: pointer;
+}
+
+input.button:hover,
+button:hover {
+    background: #5d5dba;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+
+    background: var(--color-bg-body);
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    background: var(--color-bg-main);
+
+    width: min(42.8rem, 90%);
+    padding: 4.8rem 6.4rem 6.4rem;
+    margin-bottom: 12rem;
+
+    border-radius: .6rem;
+    background: var(--color-bg-main);
+    box-shadow: 0px .2rem .4rem 0px rgba(0, 0, 0, 0.10);
+}
+
+/*Screen 1*/
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center
+
+}
+
+.text h1 {
+    color: var(--color-h1);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.text p {
+    color: var(--color-p);
+    line-height: 150%
+}
+
+form {
+    display: inline-flex;
+    justify-content: center
+}
+
+form input.number {
+    width: 4.3rem;
+    background: var(--color-bg-number);
+    padding: 1.6rem;
+
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+/*Screen 2*/
+.screen2 h1 {
+    color: var(--color-h1);
+    font-size: 2.3rem;
+    line-height: 150%;
+}
